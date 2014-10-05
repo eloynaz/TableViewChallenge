@@ -34,7 +34,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -69,16 +69,19 @@
     if(indexPath.section == 0)
     {
         cell.textLabel.text = @"I am in section 0";
+        cell.backgroundColor = [UIColor redColor];
     }
     
     else if(indexPath.section == 1)
     {
         cell.textLabel.text = @"I am in another section";
+        cell.backgroundColor = [UIColor blueColor];
     }
     
     else if(indexPath.section == 2)
     {
         cell.textLabel.text = [NSString stringWithFormat:@"cell %li",(long)indexPath.row];
+        cell.backgroundColor = [UIColor yellowColor];
     }
     
     else

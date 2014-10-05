@@ -84,11 +84,11 @@
 				C797A5D719E1FE3800A2D3AF /* AppDelegate.h */,
 				C797A5D819E1FE3800A2D3AF /* AppDelegate.m */,
 				C797A5DD19E1FE3800A2D3AF /* Main.storyboard */,
+				C797A5F919E1FF1100A2D3AF /* EFLTableViewController.h */,
+				C797A5FA19E1FF1100A2D3AF /* EFLTableViewController.m */,
 				C797A5E019E1FE3800A2D3AF /* Images.xcassets */,
 				C797A5E219E1FE3800A2D3AF /* LaunchScreen.xib */,
 				C797A5D319E1FE3800A2D3AF /* Supporting Files */,
-				C797A5F919E1FF1100A2D3AF /* EFLTableViewController.h */,
-				C797A5FA19E1FF1100A2D3AF /* EFLTableViewController.m */,
 			);
 			path = "UITableViewController Challenge Solution";
 			sourceTree = "<group>";
