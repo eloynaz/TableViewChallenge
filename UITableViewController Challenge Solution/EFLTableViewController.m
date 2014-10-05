@@ -34,24 +34,62 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    if(section == 0)
+    {
+        return 2;
+    }
+    
+    else if(section == 1)
+    {
+        return 1;
+    }
+    
+    else if(section == 2)
+    {
+        return 3;
+    }
+    
+    else
+    {
+        return 0;
+    }
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    NSString *cellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
+    if(indexPath.section == 0)
+    {
+        cell.textLabel.text = @"I am in section 0";
+    }
+    
+    else if(indexPath.section == 1)
+    {
+        cell.textLabel.text = @"I am in another section";
+    }
+    
+    else if(indexPath.section == 2)
+    {
+        cell.textLabel.text = [NSString stringWithFormat:@"cell %li",(long)indexPath.row];
+    }
+    
+    else
+    {
+        cell.textLabel.text = @"Row in Wrong Section";
+    }
     // Configure the cell...
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
